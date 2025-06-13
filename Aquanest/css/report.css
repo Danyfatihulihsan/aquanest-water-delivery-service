@@ -1,0 +1,240 @@
+/* CSS Khusus untuk Laporan - Aquanest Admin */
+
+:root {
+    --primary-color: #0396FF;
+    --primary-dark: #0D47A1;
+    --secondary-color: #60D3F0;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-bg: #f8f9fa;
+    --dark-bg: #343a40;
+}
+
+body {
+    background-color: #f5f7fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-bottom: none;
+    padding: 20px 25px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+}
+
+.card-header h5 {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(3, 150, 255, 0.3);
+}
+
+.report-content .stats-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.report-content .stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.report-content .stats-card h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 15px 0;
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+}
+
+.report-content .stats-card h5 {
+    font-size: 1rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.report-content .stats-card p {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+.chart-container {
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.03);
+}
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(3, 150, 255, 0.05);
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    background-color: rgba(3, 150, 255, 0.1);
+    color: var(--primary-dark);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.table td {
+    vertical-align: middle;
+    font-size: 0.95rem;
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 0.4em 0.8em;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.form-control, .form-select {
+    border-radius: 10px;
+    padding: 12px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 3px rgba(3, 150, 255, 0.2);
+    border-color: var(--primary-color);
+}
+
+.form-label {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Warna status pengiriman */
+.bg-warning { background-color: #ffc107 !important; }
+.bg-info { background-color: #17a2b8 !important; }
+.bg-primary { background-color: #0396FF !important; }
+.bg-indigo { background-color: #6610f2 !important; }
+.bg-success { background-color: #28a745 !important; }
+.bg-danger { background-color: #dc3545 !important; }
+
+.text-warning { color: #ffc107 !important; }
+.text-info { color: #17a2b8 !important; }
+.text-primary { color: #0396FF !important; }
+.text-indigo { color: #6610f2 !important; }
+.text-success { color: #28a745 !important; }
+.text-danger { color: #dc3545 !important; }
+
+/* Animasi fade-in untuk konten */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.report-content {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.print-hide {
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 15px;
+    }
+    
+    .report-content .stats-card h2 {
+        font-size: 2rem;
+    }
+}
+
+@media print {
+    .print-hide, .navbar, .sidebar, .footer {
+        display: none !important;
+    }
+    
+    .report-content {
+        margin: 0;
+        padding: 0;
+        animation: none;
+    }
+    
+    .card {
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .card-header {
+        background-color: #f8f9fa !important;
+        color: #000 !important;
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+    
+    .stats-card {
+        box-shadow: none !important;
+        border: 1px solid #dee2e6 !important;
+    }
+    
+    .chart-container {
+        box-shadow: none !important;
+        border: 1px solid #dee2e6 !important;
+    }
+    
+    .table-container {
+        box-shadow: none !important;
+    }
+}
