@@ -1,0 +1,27 @@
+# Mengizinkan akses ke file PHP
+<FilesMatch "\.(php)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Pastikan mod_rewrite diaktifkan
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Jika file tidak ada, arahkan ke custom 404 page
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /admin/404.php [L]
+</IfModule>
+
+# Atur custom error page
+ErrorDocument 404 /admin/404.php
+
+# Proteksi direktori agar tidak bisa dilihat isinya
+Options -Indexes
+# .htaccess - mencegah akses admin ke css frontend
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} ^/admin/
+    RewriteRule ^css/style\.css$ - [F]
+</IfModule>
