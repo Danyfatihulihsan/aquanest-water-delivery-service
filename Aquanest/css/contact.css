@@ -1,0 +1,354 @@
+/* Custom Styles for Contact Page */
+.contact-hero {
+    background: linear-gradient(135deg, #0396FF 0%, #0D47A1 100%);
+    padding: 120px 0 100px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.contact-hero::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+}
+
+.contact-hero::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    bottom: -200px;
+    left: -200px;
+}
+
+.contact-hero img {
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+}
+
+.info-cards-section {
+    padding: 80px 0;
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+}
+
+.info-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    padding: 40px 30px;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0396FF 0%, #0D47A1 100%);
+    color: white;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.info-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.info-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.info-link {
+    color: #0396FF;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.info-link:hover {
+    color: #0D47A1;
+    transform: translateX(5px);
+}
+
+.contact-form-section {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.contact-form-wrap {
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.section-heading h5 {
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #555;
+}
+
+.form-control {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0396FF;
+    box-shadow: 0 0 0 0.2rem rgba(3, 150, 255, 0.25);
+}
+
+.form-select {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #0396FF;
+    box-shadow: 0 0 0 0.2rem rgba(3, 150, 255, 0.25);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0396FF 0%, #0D47A1 100%);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(3, 150, 255, 0.2);
+}
+
+.map-wrapper {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.map-wrapper iframe {
+    border-radius: 15px;
+}
+
+.map-info-box {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.map-info-box h4 {
+    font-weight: 700;
+    color: #0D47A1;
+    margin-bottom: 15px;
+}
+
+.map-info-box p {
+    margin-bottom: 8px;
+}
+
+.map-info-box p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-button {
+    font-weight: 600;
+    padding: 20px 25px;
+    background: white;
+    color: #333;
+}
+
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #0396FF 0%, #0D47A1 100%);
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    background-size: 18px;
+}
+
+.cta-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0396FF 0%, #0D47A1 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: -150px;
+    right: -150px;
+}
+
+.cta-section::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    bottom: -100px;
+    left: -100px;
+}
+
+.btn-light {
+    background: white;
+    color: #0D47A1;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-light:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: white;
+    color: #0396FF;
+}
+
+.btn-outline-light {
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.floating-bubble {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 8s infinite ease-in-out;
+}
+
+.floating-bubble:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.floating-bubble:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    top: 60%;
+    left: 20%;
+    animation-delay: 1s;
+}
+
+.floating-bubble:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    top: 30%;
+    right: 30%;
+    animation-delay: 2s;
+}
+
+.floating-bubble:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    bottom: 20%;
+    right: 10%;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .info-cards-section {
+        margin-top: 0;
+    }
+    
+    .contact-form-wrap {
+        padding: 25px;
+    }
+    
+    .map-info-box {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        margin-top: 20px;
+    }
+}
