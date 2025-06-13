@@ -1,0 +1,274 @@
+/* 
+* Aquanest - Main CSS File
+* Created for Aquanest Water Depot
+*/
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #0d6efd;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #0a58ca;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0a58ca;
+  border-color: #0a58ca;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+}
+
+/* Feature Boxes */
+.feature-box {
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Cards */
+.card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #0d6efd !important;
+}
+
+/* Admin Dashboard */
+.admin-sidebar {
+  min-height: 100vh;
+  background-color: #343a40;
+}
+
+.admin-sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.admin-sidebar .nav-link:hover,
+.admin-sidebar .nav-link.active {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.admin-sidebar .nav-link i {
+  width: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+/* About Page */
+.about-timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.about-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #0d6efd;
+}
+
+.about-timeline-item {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.about-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -34px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+}
+
+/* Contact Page */
+.contact-info-box {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.contact-info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Order Page */
+.order-summary {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Admin Login Page */
+.admin-login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  background-image: url('../img/loginbg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Styling untuk tombol toggle password */
+.password-toggle-btn {
+  cursor: pointer;
+}
+
+.input-group-append {
+  margin-left: -1px;
+}
+
+.password-toggle-btn:hover {
+  background-color: #f8f9fa;
+}
+
+/* Admin Dashboard Stats */
+.stats-card {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stats-icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-section {
+      padding: 3rem 0;
+      min-height: auto;
+  }
+  
+  .card-img-top {
+      height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+      text-align: center;
+  }
+  
+  .card-img-top {
+      height: 160px;
+  }
+}
+/* 
+* Aquanest - Main CSS File
+* Created for Aquanest Water Depot
+*/
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 60px; /* Tambahkan padding untuk fixed navbar */
+}
